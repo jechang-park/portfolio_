@@ -1,0 +1,126 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.wrapper {
+    width: 100%;
+}
+
+.content1 {
+    margin: 0 auto;
+    width: 1400px;
+    height: 100%;
+    background-image: url(/img/blob-haikei.png);
+    background-size: cover;
+}
+.content1_box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    width: 1280px;
+    height: 100%;
+    margin: 300px;
+}
+.content1 div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.content1 .text_box p {
+    height: 50px;
+}
+.content1 .text_box span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.content1_box img {
+    margin-left: 50px;
+}
+
+.content2 {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+.cotent2 .content_box {
+    width: 1280px;
+    display: flex;
+}
+.content2 .tech_box {
+    width: 600px;
+
+    flex-wrap: wrap;
+    display: flex;
+}
+.content2 .tech_box img {
+    width: 100px;
+    height: 100px;
+}
+.content2 .content_box .display {
+    display: flex;
+}
+.content3 {
+    background-image: url(/img/background-green.png);
+    background-size: cover;
+    width: 1280px;
+    margin: 10px auto 0px auto;
+    text-align: center;
+}
+.content3 > img {
+    margin-top: 100px;
+}
+.content3 .text_content {
+    display: flex;
+    justify-content: center;
+}
+.content3 .text_box {
+    text-align: left;
+}
+.content3 .text_box2 {
+    text-align: left;
+}
+.btn_set a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #999;
+    border-radius: 50px;
+    line-height: 50px;
+    margin: 30px;
+}
+.content4 {
+    background-image: url(/img/background-sky.png);
+    background-size: cover;
+    width: 1280px;
+    margin: 10px auto 0px auto;
+    text-align: center;
+}
+.content4 > img {
+    margin-top: 100px;
+}
+.content4 .text_content {
+    display: flex;
+    justify-content: center;
+}
+.content4 .text_box {
+    text-align: left;
+}
+.content4 .text_box2 {
+    text-align: left;
+}
+.btn_set a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #999;
+    border-radius: 50px;
+    line-height: 50px;
+    margin: 30px;
+}
