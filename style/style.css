@@ -7,6 +7,7 @@
 body {
     width: 100%;
     font-family: "Noto Sans KR", sans-serif;
+    background-color: #eee;
 }
 .wrapper {
     width: 100%;
@@ -14,7 +15,7 @@ body {
 
 .content1 {
     margin: 0 auto;
-    width: 1400px;
+    width: 2000px;
     height: 100%;
     background-image: url(/img/blob-haikei.png);
     background-size: cover;
@@ -28,12 +29,47 @@ body {
     height: 100%;
     margin: 300px;
 }
-.content1 div img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+.content1_box .text_content {
+    font-size: 20px;
+}
+.content1_box .text_content h3 {
+    font-size: 20px;
+}
+
+.content1_box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    width: 1280px;
+    height: 100%;
+    margin: 300px;
+}
+.content1 .content1_box img {
+    width: 500px;
+    height: 100%;
+    border-radius: 30%;
 }
 .content1 .text_box p {
+    margin-top: 20px;
+    height: 50px;
+}
+.content1 .text_box2 {
+    margin-top: 20px;
+}
+.content1 .text_box2 p {
+    font-size: 30px;
+    margin-top: 20px;
+    height: 50px;
+}
+.content1 .text_box2 span {
+    font-weight: bold;
+}
+.content1 .text_box3 {
+    margin-top: 340px;
+}
+.content1 .text_box3 p {
+    margin-top: 20px;
     height: 50px;
 }
 .content1 .text_box span {
@@ -48,6 +84,7 @@ body {
     width: 1280px;
     margin: 0 auto;
     display: flex;
+    position: relative;
 }
 .cotent2 .content_box {
     width: 1280px;
@@ -59,6 +96,9 @@ body {
     flex-wrap: wrap;
     display: flex;
 }
+.content2 .tech_box div p {
+    font-size: 30px;
+}
 .content2 .tech_box img {
     width: 100px;
     height: 100px;
@@ -66,6 +106,46 @@ body {
 .content2 .content_box .display {
     display: flex;
 }
+
+.content2 .swiper {
+    position: absolute;
+    left: 711px;
+    top: 25px;
+    object-fit: fill;
+    width: 461px;
+    height: 285px;
+}
+.content2 .swiper-slide img {
+    width: 100%;
+    height: 287px;
+}
+.content2 .swiper-button-prev {
+    position: absolute;
+    top: 379px;
+    left: 852px;
+}
+
+.content2 .swiper-button-prev img {
+    width: 50px;
+    height: 50px;
+}
+
+.content2 .swiper-button-next {
+    position: absolute;
+    top: 379px;
+    left: 984px;
+}
+.content2 .swiper-button-next img {
+    width: 50px;
+    height: 50px;
+}
+.content2 .swiper-button-next::after {
+    content: "";
+}
+.content2 .swiper-button-prev::after {
+    content: "";
+}
+
 .content3 {
     background-image: url(/img/background-green.png);
     background-size: cover;
