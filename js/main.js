@@ -15,4 +15,22 @@ window.addEventListener("load", function () {
     setTimeout(function () {
         text2.style.display = "block";
     }, 2000);
+    var first = document.querySelector(".first");
+    first.style.opacity = 0;
+    first.style.transform = "translateY(50px)";
+    setTimeout(function () {
+        first.style.opacity = 1;
+        first.style.transform = "translateY(0)";
+        first.style.transition =
+            "opacity 1s ease-in-out, transform 1s ease-in-out";
+    }, 5600);
+    var second = document.querySelector(".second");
+    second.style.opacity = 0;
+    second.style.transform = "translateY(50px)";
+    setTimeout(function () {
+        second.style.opacity = 1;
+        second.style.transform = "translateY(0)";
+        second.style.transition =
+            "opacity 1s ease-in-out, transform 1s ease-in-out";
+    }, 6000);
 });
