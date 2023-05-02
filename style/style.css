@@ -252,6 +252,8 @@ section {
     width: 1280px;
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .content2 .tech_box {
     width: 600px;
@@ -262,17 +264,21 @@ section {
 }
 
 .content2 .tech_box div {
-    margin: 40px;
+    margin: 20px;
 }
 .content2 .tech_box div p {
     font-size: 30px;
     font-weight: bold;
 }
+.content2 .tech_box .gpt {
+    width: 200px;
+    height: 200px;
+}
 .content2 .tech_box img {
     width: 100px;
     height: 100px;
 }
-.content2 .tech_box h3 {
+.content2 h3 {
     font-size: 30px;
 }
 .content2 .content_box .display {
@@ -322,7 +328,7 @@ section {
     background-image: url(/img/background-green.png);
     background-size: cover;
     width: 1280px;
-    margin: 10px auto 0px auto;
+    margin: 300px auto 0px auto;
     text-align: center;
     position: relative;
 }
