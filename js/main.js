@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
   var loadingScreen = document.getElementById("loading_screen");
   setTimeout(function () {
     loadingScreen.style.display = "none";
-  }, 4000);
+  }, 3000);
 
   var text1 = document.getElementById("text1");
   setTimeout(function () {
@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
     first.style.opacity = 1;
     first.style.transform = "translateY(0)";
     first.style.transition = "opacity 1s ease-in-out, transform 1s ease-in-out";
-  }, 4600);
+  }, 3600);
   var second = document.querySelector(".second");
   second.style.opacity = 0;
   second.style.transform = "translateY(50px)";
@@ -31,5 +31,5 @@ window.addEventListener("load", function () {
     second.style.transform = "translateY(0)";
     second.style.transition =
       "opacity 1s ease-in-out, transform 1s ease-in-out";
-  }, 5000);
+  }, 4000);
 });
