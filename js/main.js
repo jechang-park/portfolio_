@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
   var loadingScreen = document.getElementById("loading_screen");
   setTimeout(function () {
     loadingScreen.style.display = "none";
-  }, 2700);
+  }, 3000);
 
   var text1 = document.getElementById("text1");
   setTimeout(function () {
