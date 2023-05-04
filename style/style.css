@@ -255,20 +255,17 @@ section {
   display: flex;
 }
 
-.content2 .tech_box div {
-  margin: 20px;
-}
 .content2 .tech_box div p {
   font-size: 30px;
   font-weight: bold;
 }
 .content2 .tech_box .gpt {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .content2 .tech_box img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
 }
 .content2 h3 {
   font-size: 30px;
@@ -373,7 +370,7 @@ section {
   height: 30px;
 }
 .content4 {
-  background-image: url(/img/background-sky.png);
+  background-image: url(/img/content4.png);
   background-size: cover;
   width: 1280px;
   margin: 10px auto 0px auto;
@@ -397,12 +394,29 @@ section {
 .content4 .text_box2 {
   text-align: left;
 }
-.btn_set a {
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  border: 1px solid #1b00ff;
-  border-radius: 50px;
-  line-height: 50px;
-  margin: 30px;
+
+.content5 {
+  background-image: url(/img/content5.png);
+  background-size: cover;
+  width: 1280px;
+  margin: 10px auto 0px auto;
+  text-align: center;
+}
+.content5 ul {
+  margin-right: 100px;
+}
+.content5 > img {
+  margin-top: 100px;
+}
+.content5 .text_content {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.content5 .text_box {
+  text-align: left;
+}
+.content5 .text_box2 {
+  text-align: left;
 }
