@@ -161,6 +161,7 @@ section {
     margin: 0 auto;
 }
 .intro .text_box {
+    position: relative;
     flex-direction: column;
     width: 1280px;
     display: flex;

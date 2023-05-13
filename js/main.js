@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
     var loadingScreen = document.getElementById("loading_screen");
     setTimeout(function () {
         loadingScreen.style.display = "none";
-    }, 2700);
+    }, 2400);
 
     var text1 = document.getElementById("text1");
     setTimeout(function () {
@@ -24,7 +24,7 @@ window.addEventListener("load", function () {
         first.style.transform = "translateY(0)";
         first.style.transition =
             "opacity 1s ease-in-out, transform 1s ease-in-out";
-    }, 3200);
+    }, 3000);
     var second = document.querySelector(".second");
     second.style.opacity = 0;
     second.style.transform = "translateY(50px)";
@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
         second.style.transform = "translateY(0)";
         second.style.transition =
             "opacity 1s ease-in-out, transform 1s ease-in-out";
-    }, 3600);
+    }, 3400);
 });
 const autoplayBtn = document.querySelector(".autoplay-btn");
 autoplayBtn.addEventListener("click", function () {
