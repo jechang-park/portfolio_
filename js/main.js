@@ -46,3 +46,24 @@ autoplayBtn.addEventListener("click", function () {
         img.setAttribute("src", "./img/pause.png");
     }
 });
+const about = document.getElementById("about");
+const skill = document.getElementById("skill");
+const portfolio = document.getElementById("portfolio");
+about.addEventListener("click", () => {
+    window.scrollTo({
+        top: 1100,
+        behavior: "auto",
+    });
+});
+skill.addEventListener("click", () => {
+    window.scrollTo({
+        top: 2200,
+        behavior: "auto",
+    });
+});
+portfolio.addEventListener("click", () => {
+    window.scrollTo({
+        top: 3700,
+        behavior: "auto",
+    });
+});
