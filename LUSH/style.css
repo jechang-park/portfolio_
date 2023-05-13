@@ -178,6 +178,21 @@ section {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+}
+#section4 p {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 3.8em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+#section4 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .nav-dots {
