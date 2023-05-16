@@ -1,320 +1,342 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>할리스</title>
-        <link rel="stylesheet" href="./style/style.css" />
-        <script defer src="./hollys.js"></script>
-    </head>
-    <body>
-        <div class="wrap">
-            <header id="header">
-                <div class="header-inner">
-                    <div class="header-inner-01">
-                        <ul class="header-inner-smenu">
-                            <li><img src="./img/gnb_smenu01.png" alt="" /></li>
-                            <li><img src="./img/gnb_smenu04.gif" alt="" /></li>
-                        </ul>
-                        <a href=""
-                            ><img src="./img/logo_210302.gif" alt=""
-                        /></a>
-                        <ul class="util-gnb">
-                            <li>
-                                <a href=""
-                                    ><img src="./img/util_login.gif" alt=""
-                                /></a>
-                            </li>
-                            <li>
-                                <a href=""
-                                    ><img src="./img/util_join.gif" alt=""
-                                /></a>
-                            </li>
-                            <li>
-                                <a href=""
-                                    ><img src="./img/util_09.gif" alt=""
-                                /></a>
-                            </li>
-                            <li>
-                                <a href=""
-                                    ><img src="./img/util_chinese.gif" alt=""
-                                /></a>
-                            </li>
-                            <li>
-                                <a href=""
-                                    ><img src="./img/util_05.gif" alt=""
-                                /></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header-inner-02">
-                        <ul>
-                            <li>
-                                <img src="./img/gnb_01.png" alt="메뉴" />
-                                <span>메뉴</span>
-                            </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>할리스</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="./hollys.js"></script>
+  </head>
+  <body>
+    <!-- wrap -->
 
-                            <li>
-                                <img
-                                    src="./img/gnb_02.png"
-                                    alt="할리스 몰"
-                                /><span>할리스 몰</span>
-                            </li>
-                            <li>
-                                <img src="./img/gnb_03.png" alt="멤버쉽" /><span
-                                    >멤버쉽</span
-                                >
-                            </li>
-                            <li>
-                                <img
-                                    src="./img/gnb_04.png"
-                                    alt="이벤트 및 공지"
-                                /><span>이벤트 및 공지</span>
-                            </li>
-                            <li>
-                                <img src="./img/gnb_05.png" alt="매장" /><span
-                                    >매장</span
-                                >
-                            </li>
-                            <li>
-                                <img
-                                    src="./img/gnb_06.png"
-                                    alt="할리스 소개"
-                                /><span>할리스 소개</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <a href=""><img src="./img/floating.png" alt="" /></a> -->
-                </div>
-                <div class="all-menu">
-                    <div class="all-menu-inner">
-                        <ul>
-                            <li><a href="">COFFEE</a></li>
-                            <li><a href="">라떼·초콜릿·티</a></li>
-                            <li><a href="">할리치노·빙수</a></li>
-                            <li><a href="">스무디·주스</a></li>
-                            <li><a href="">스파클링</a></li>
-                            <li><a href="">푸드</a></li>
-                            <li><a href="">MD상품</a></li>
-                            <li><a href="">MD식품</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">할리스콘</a></li>
-                            <li><a href="">할리스카드</a></li>
-                            <li><a href="">E-Store</a></li>
-                            <li><a href="">구매내역</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">스마트오더</a></li>
-                            <li><a href="">멤버십 혜택</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">Notice</a></li>
-                            <li><a href="">Event</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">매장검색</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">HOLLYS</a></li>
-                            <li><a href="">할리스 위치 및 연락처</a></li>
-                            <li><a href="">채용안내</a></li>
-                            <li><a href="">가맹문의 및 절차</a></li>
-                            <li><a href="">B2B 사업 소개</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-            <main>
-                <div class="banner">
-                    <div>
-                        <img
-                            id="image"
-                            src="./img/mainBanner_202304060227494890.jpg"
-                            alt="이미지"
-                        />
-                    </div>
-                    <div class="btn-set">
-                        <button
-                            class="dot-button"
-                            onclick="changeImage(0)"
-                        ></button>
-                        <button
-                            class="dot-button"
-                            onclick="changeImage(1)"
-                        ></button>
-                        <button
-                            class="dot-button"
-                            onclick="changeImage(2)"
-                        ></button>
-                        <button
-                            class="dot-button"
-                            onclick="changeImage(3)"
-                        ></button>
-                    </div>
-                </div>
-                <div class="cnt">
-                    <div class="cnt1">
-                        <div class="left-cnt">
-                            <a href="">
-                                <img src="./img/menu_img01.gif" alt=""
-                            /></a>
-                        </div>
-                        <div class="center-cnt">
-                            <p>
-                                <img src="./img/mall_tit.gif" alt="" />
-                            </p>
-                            <span>
-                                <img src="./img/mall_txt_210224.png" alt="" />
-                            </span>
-                            <div class="center-cnt-food">
-                                <a href=""
-                                    ><img
-                                        src="./img/mallProdut_202304111221292750.png"
-                                        alt="" /></a
-                                ><a href=""
-                                    ><img
-                                        src="./img/mallProdut_202304190542210810.png"
-                                        alt="" /></a
-                                ><a href=""
-                                    ><img
-                                        src="./img/mallProdut_202304271033065490.png"
-                                        alt=""
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="right-cnt">
-                            <a href="">
-                                <img
-                                    src="./img/store_main_pc.jpg"
-                                    alt="매장 찾기"
-                            /></a>
-                        </div>
-                    </div>
-                    <div class="cnt2">
-                        <div>
-                            <img src="./img/img_2102223.jpg" alt="" />
-                            <img
-                                src="./img/img_banner_membership_210223.jpg"
-                                alt=""
-                            />
-                            <img src="" alt="" />
-                        </div>
-                    </div>
-                    <div class="cnt3">
-                        <ul>
-                            <li>
-                                <img src="./img/event_tit.png" alt="이벤트" />
-                                <ul class="evt">
-                                    <li>
-                                        <a href=""
-                                            >[딜리버리] 매주 월요일은
-                                            <span>05-03</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            [멤버쉽 혜택] 할리스 멤버<span
-                                                >04-27</span
-                                            >
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            VIVID SPRING, 싱그럽고<span
-                                                >04-06</span
-                                            >
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <img src="./img/b2b_tit.gif" alt="" />
-                                <ul class="knowhow">
-                                    <li>
-                                        <a href=""
-                                            >할리스 F&B는 20년의 커피 노하우를
-                                            기반으로 한 할리스 B2B 솔루션을
-                                            소개합니다.
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">바로가기</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <img src="./img/news_tit.gif" alt="" />
-                                <ul class="news">
-                                    <li>
-                                        <a href="">
-                                            [공고] 제3자 배정 유상증자
-                                            <span>05-03</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href=""
-                                            >개인정보처리방침 변경 안내
-                                            <span>10-06</span></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href=""
-                                            >중간배당 기준일 공고
-                                            <span>10-14</span></a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <ul class="etc">
-                                <li>
-                                    <a href="">
-                                        <img src="./img/img_etc01.gif" alt=""
-                                    /></a>
-                                    <a href="">
-                                        <img src="./img/img_etc03.gif" alt=""
-                                    /></a>
-                                </li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="cnt4">
-                        <div>
-                            <a href=""><img src="./img/sns_tit.gif" alt="" /></a
-                            ><a href=""
-                                ><img src="./img/sns_facebook.gif" alt="" /></a
-                            ><a href=""
-                                ><img src="./img/sns_instagram.gif" alt=""
-                            /></a>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer>
-                <div class="footer-inner">
-                    <div class="policy">
-                        <a href="">개인정보처리방침</a>
-                        <a href="">서비스이용약관</a
-                        ><a href="">멤버십이용약관</a
-                        ><a href=""> 할리스카드이용약관 </a
-                        ><a href="">고객문의</a><a href="">고객설문</a
-                        ><a href="">사이트맵</a><a href="">BI소개</a>
-                    </div>
-                    <p>
-                        법인명: (주) 케이지할리스에프앤비 대표자: 이종현
-                        사업자등록번호 211-87-61044 통신판매업:
-                        제2019-서울종로-0193호
-                        <br />
-                        주소 : 서울특별시 중구 통일로 92, 9층(순화동,
-                        케이지타워) 대표전화 : 02-2188-7100 (가맹문의 :
-                        02-6350-7229)
-                        <br />
-                        COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
-                    </p>
-                </div>
-            </footer>
+    <div class="wrap">
+      <header id="header">
+        <div class="header-inner">
+          <!-- mobile -->
+          <div id="logo"><img src="./img/logo_210302.gif" alt="" /></div>
+          <div class="navbar">
+            <img src="./img/hamburger.png" alt="" />
+          </div>
+          <div class="m-all-menu">
+            <ul>
+              <li>
+                <img src="./img/gnb_01.png" alt="메뉴" />
+                <a href=""> ➕</a>
+              </li>
+
+              <li>
+                <img src="./img/gnb_02.png" alt="할리스 몰" /> <a href="">➕</a>
+              </li>
+              <li>
+                <img src="./img/gnb_03.png" alt="멤버쉽" /> <a href="">➕</a>
+              </li>
+              <li>
+                <img src="./img/gnb_04.png" alt="이벤트 및 공지" />
+                <a href="">➕</a>
+              </li>
+              <li>
+                <img src="./img/gnb_05.png" alt="매장" /> <a href="">➕</a>
+              </li>
+              <li>
+                <img src="./img/gnb_06.png" alt="할리스 소개" />
+                <a href="">➕</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  -->
+          <div class="header-inner-01">
+            <ul class="header-inner-smenu">
+              <li><img src="./img/gnb_smenu01.png" alt="" /></li>
+              <li><img src="./img/gnb_smenu04.gif" alt="" /></li>
+            </ul>
+            <a href=""><img src="./img/logo_210302.gif" alt="로고" /></a>
+
+            <ul class="util-gnb">
+              <li>
+                <a href=""><img src="./img/util_login.gif" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./img/util_join.gif" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./img/util_09.gif" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./img/util_chinese.gif" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./img/util_05.gif" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-inner-02">
+            <ul>
+              <li>
+                <img src="./img/gnb_01.png" alt="메뉴" />
+                <span>메뉴</span>
+              </li>
+
+              <li>
+                <img src="./img/gnb_02.png" alt="할리스 몰" /><span
+                  >할리스 몰</span
+                >
+              </li>
+              <li>
+                <img src="./img/gnb_03.png" alt="멤버쉽" /><span>멤버쉽</span>
+              </li>
+              <li>
+                <img src="./img/gnb_04.png" alt="이벤트 및 공지" /><span
+                  >이벤트 및 공지</span
+                >
+              </li>
+              <li>
+                <img src="./img/gnb_05.png" alt="매장" /><span>매장</span>
+              </li>
+              <li>
+                <img src="./img/gnb_06.png" alt="할리스 소개" /><span
+                  >할리스 소개</span
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- <a href=""><img src="./img/floating.png" alt="" /></a> -->
         </div>
-        <script></script>
-    </body>
+        <div class="all-menu">
+          <div class="all-menu-inner">
+            <ul>
+              <li><a href="">COFFEE</a></li>
+              <li><a href="">라떼·초콜릿·티</a></li>
+              <li><a href="">할리치노·빙수</a></li>
+              <li><a href="">스무디·주스</a></li>
+              <li><a href="">스파클링</a></li>
+              <li><a href="">푸드</a></li>
+              <li><a href="">MD상품</a></li>
+              <li><a href="">MD식품</a></li>
+            </ul>
+            <ul>
+              <li><a href="">할리스콘</a></li>
+              <li><a href="">할리스카드</a></li>
+              <li><a href="">E-Store</a></li>
+              <li><a href="">구매내역</a></li>
+            </ul>
+            <ul>
+              <li><a href="">스마트오더</a></li>
+              <li><a href="">멤버십 혜택</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Notice</a></li>
+              <li><a href="">Event</a></li>
+            </ul>
+            <ul>
+              <li><a href="">매장검색</a></li>
+            </ul>
+            <ul>
+              <li><a href="">HOLLYS</a></li>
+              <li><a href="">할리스 위치 및 연락처</a></li>
+              <li><a href="">채용안내</a></li>
+              <li><a href="">가맹문의 및 절차</a></li>
+              <li><a href="">B2B 사업 소개</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- main -->
+
+      <main>
+        <div class="banner">
+          <div>
+            <img
+              id="image"
+              src="./img/mainBanner_202304060227494890.jpg"
+              alt="이미지"
+            />
+          </div>
+          <div class="btn-set">
+            <button class="dot-button" onclick="changeImage(0)"></button>
+            <button class="dot-button" onclick="changeImage(1)"></button>
+            <button class="dot-button" onclick="changeImage(2)"></button>
+            <button class="dot-button" onclick="changeImage(3)"></button>
+          </div>
+        </div>
+
+        <!-- cnt -->
+
+        <div class="cnt">
+          <!-- cnt1 -->
+          <div class="cnt1">
+            <div class="left-cnt">
+              <a href=""> <img src="./img/menu_img01.gif" alt="" /></a>
+            </div>
+            <div class="center-cnt">
+              <p>
+                <img src="./img/mall_tit.gif" alt="" />
+              </p>
+              <span>
+                <img src="./img/mall_txt_210224.png" alt="" />
+              </span>
+              <div class="center-cnt-food">
+                <a href=""
+                  ><img
+                    src="./img/mallProdut_202304111221292750.png"
+                    alt="" /></a
+                ><a href=""
+                  ><img
+                    src="./img/mallProdut_202304190542210810.png"
+                    alt="" /></a
+                ><a href=""
+                  ><img src="./img/mallProdut_202304271033065490.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="right-cnt">
+              <a href="">
+                <img src="./img/store_main_pc.jpg" alt="매장 찾기"
+              /></a>
+            </div>
+          </div>
+
+          <!-- cnt2 -->
+
+          <div class="cnt2">
+            <div>
+              <img src="./img/img_2102223.jpg" alt="" />
+              <img src="./img/img_banner_membership_210223.jpg" alt="" />
+              <img src="" alt="" />
+            </div>
+          </div>
+
+          <!-- mobile -->
+          <div class="m-cnt3">
+            <a href=""> <img src="./img/event_tit.png" alt="이벤트" /></a>
+            <a href=""> <img src="./img/b2b_tit.gif" alt="" /></a>
+            <a href=""> <img src="./img/news_tit.gif" alt="" /></a>
+            <div>
+              <a href="">
+                <img src="./img/img_etc01.gif" alt="" />
+                <span>창업안내</span></a
+              >
+              <a href="">
+                <img src="./img/img_etc03.gif" alt="" />
+                <span>고객문의</span></a
+              >
+            </div>
+          </div>
+
+          <!-- cnt3 -->
+          <div class="cnt3">
+            <ul>
+              <li>
+                <img src="./img/event_tit.png" alt="이벤트" />
+                <ul class="evt">
+                  <li>
+                    <a href="">
+                      <p>[딜리버리] 매주 월요일은…</p>
+                      <span>05-03</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>[멤버쉽 혜택] 할리스 멤버…</p>
+                      <span>04-27</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>VIVID SPRING, 싱그럽고…</p>
+                      <span>04-06</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img src="./img/b2b_tit.gif" alt="" />
+                <ul class="knowhow">
+                  <li>
+                    <a href=""
+                      >할리스 F&B는 20년의 커피 노하우를 기반으로 한 할리스 B2B
+                      솔루션을 소개합니다.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">바로가기</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img src="./img/news_tit.gif" alt="" />
+                <ul class="news">
+                  <li>
+                    <a href="">
+                      <p>[공고] 제3자 배정 유상증자</p>
+                      <span>05-03</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p>개인정보처리방침 변경 안내</p>
+                      <span>10-06</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href=""
+                      ><p>중간배당 기준일 공고</p>
+                      <span>10-14</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <ul class="etc">
+                <li>
+                  <a href="">
+                    <img src="./img/img_etc01.gif" alt="" />
+                    <br />
+                    <span>창업안내</span></a
+                  >
+                  <a href="">
+                    <img src="./img/img_etc03.gif" alt="" />
+                    <br />
+                    <span>고객문의</span></a
+                  >
+                </li>
+              </ul>
+            </ul>
+          </div>
+
+          <!-- cnt4 -->
+
+          <div class="cnt4">
+            <div>
+              <a href=""><img src="./img/sns_tit.gif" alt="" /></a
+              ><a href=""><img src="./img/sns_facebook.gif" alt="" /></a
+              ><a href=""><img src="./img/sns_instagram.gif" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-inner">
+          <div class="policy">
+            <a href="">개인정보처리방침</a>
+            <a href="">서비스이용약관</a><a href="">멤버십이용약관</a
+            ><a href=""> 할리스카드이용약관 </a><a href="">고객문의</a
+            ><a href="">고객설문</a><a href="">사이트맵</a><a href="">BI소개</a>
+          </div>
+          <p>
+            법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호
+            211-87-61044 통신판매업: 제2019-서울종로-0193호
+            <br />
+            주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 :
+            02-2188-7100 (가맹문의 : 02-6350-7229)
+            <br />
+            COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script></script>
+  </body>
 </html>
