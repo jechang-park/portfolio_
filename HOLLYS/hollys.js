@@ -60,3 +60,39 @@ window.addEventListener("resize", function () {
 		navBar.style.display = "none";
 	}
 });
+window.addEventListener("DOMContentLoaded", function () {
+	const slider = document.querySelector(".slider");
+	const slides = document.querySelectorAll(".slide");
+	const prevBtn = document.querySelector(".prev-btn");
+	const nextBtn = document.querySelector(".next-btn");
+	let currentIndex = 0;
+
+	// 이전 버튼 클릭 시 이전 슬라이드로 이동
+	prevBtn.addEventListener("click", function () {
+		// 이전 슬라이드의 인덱스 계산
+		currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+
+		// 이미지 변경
+		changeImage();
+	});
+
+	// 다음 버튼 클릭 시 다음 슬라이드로 이동
+	nextBtn.addEventListener("click", function () {
+		// 다음 슬라이드의 인덱스 계산
+		currentIndex = (currentIndex + 1) % slides.length;
+
+		// 이미지 변경
+		changeImage();
+	});
+
+	// 이미지 변경 함수
+	function changeImage() {
+		// 모든 슬라이드의 이미지를 숨김 처리
+		slides.forEach(function (slide) {
+			slide.style.display = "none";
+		});
+
+		// 현재 슬라이드의 이미지를 보여줌
+		slides[currentIndex].style.display = "block";
+	}
+});

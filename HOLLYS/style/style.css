@@ -4,7 +4,6 @@
 	list-style: none;
 	text-decoration: none;
 	color: inherit;
-	outline: 1px solid #eee;
 }
 .active {
 	display: block;
@@ -261,7 +260,7 @@ footer {
 }
 
 /* mobile */
-@media (max-width: 1068px) {
+@media (max-width: 1024px) {
 	.all-menu {
 		display: none;
 	}
@@ -343,6 +342,9 @@ footer {
 		display: flex;
 		flex-direction: column;
 	}
+	.center-cnt {
+		width: 100%;
+	}
 	.center-cnt-food img {
 		border-right: none;
 	}
@@ -388,28 +390,20 @@ footer {
 	}
 	.prev-btn,
 	.next-btn {
-		width: 10px;
-		height: 10px;
+		width: 20px;
+		height: 20px;
 		display: block;
-		position: absolute;
-		transform: translateY(-50%);
 		background: transparent;
 		border: none;
-		font-size: 24px;
+		font-size: 35px;
 		color: #000;
 		cursor: pointer;
-	}
-	.next-btn {
-		top: 79px;
-		left: 159px;
-	}
-	.prev-btn {
-		top: 79px;
-		left: 1px;
+		margin-right: 30px;
 	}
 
 	/* slide */
 	.m-btn-set {
+		display: flex;
 		position: absolute;
 	}
 	.center-cnt {
@@ -449,15 +443,10 @@ footer {
 	}
 }
 @media (max-width: 768px) {
+	.center-cnt-food {
+		position: relative;
+	}
 	.cnt1 .left-cnt {
 		display: none;
-	}
-	.next-btn {
-		top: 99px;
-		left: 200px;
-	}
-	.prev-btn {
-		top: 99px;
-		left: 1px;
 	}
 }
