@@ -382,11 +382,11 @@ footer {
         text-align: center;
     }
     .m-btn-set {
-        top: 1px;
-        z-index: 999;
         position: absolute;
+        display: flex;
         width: 10px;
         height: 10px;
+        top: 1px;
     }
     .prev-btn,
     .next-btn {
@@ -399,13 +399,9 @@ footer {
         color: #000;
         cursor: pointer;
         margin-right: 30px;
+        z-index: 999;
     }
 
-    /* slide */
-    .m-btn-set {
-        display: flex;
-        position: absolute;
-    }
     .center-cnt {
         margin: 20px;
     }
