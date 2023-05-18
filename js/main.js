@@ -67,3 +67,25 @@ portfolio.addEventListener("click", () => {
         behavior: "auto",
     });
 });
+
+const quickBtn1 = document.querySelector(".quickbtn1");
+const quickBtn2 = document.querySelector(".quickbtn2");
+const quickBtn3 = document.querySelector(".quickbtn3");
+quickBtn1.addEventListener("click", () => {
+    window.scrollTo({
+        top: 3700,
+        behavior: "auto",
+    });
+});
+quickBtn2.addEventListener("click", () => {
+    window.scrollTo({
+        top: 7200,
+        behavior: "auto",
+    });
+});
+quickBtn3.addEventListener("click", () => {
+    window.scrollTo({
+        top: 4900,
+        behavior: "auto",
+    });
+});

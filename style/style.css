@@ -89,6 +89,32 @@ section {
     width: 1280px;
     margin: 0 auto;
 }
+.intro .quick-btn {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.intro .quick-btn > p {
+    font-size: 30px;
+}
+.intro .quick-btn > img {
+    position: absolute;
+    top: -19px px;
+    left: 783px;
+}
+.intro .quick-btn button {
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+}
+.intro .quick-btn img {
+    object-fit: contain;
+    width: 100px;
+    height: 50px;
+}
+
 .circle {
     position: relative;
     width: 50px;
