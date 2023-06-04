@@ -121,8 +121,10 @@ window.addEventListener("DOMContentLoaded", function () {
         changeImage();
     });
 
-    // 자동 슬라이드 시작
-    startSlideShow();
+    // 1068px 일때만 자동 슬라이드 시작
+    if (window.innerWidth <= 1068) {
+        startSlideShow();
+    }
 
     // 자동 슬라이드 시작 함수
     function startSlideShow() {
@@ -153,6 +155,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // 마우스 아웃 시 자동 슬라이드 다시 시작
     slider.addEventListener("mouseout", function () {
-        startSlideShow();
+        // 1068px 일때만 자동 슬라이드 다시 시작
+        if (window.innerWidth <= 1068) {
+            startSlideShow();
+        }
     });
 });
