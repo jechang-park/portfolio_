@@ -1,44 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
 
-/* Reset */
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     list-style: none;
     text-decoration: none;
 }
 
-body, html {
-    overflow: hidden; /* Hide scrollbar */
+body,
+html {
+    overflow: hidden; /* 스크롤바 숨기기  */
 }
-
 body {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
-
-/* Animations */
 .fade-down {
     opacity: 0;
     transform: translateY(-70px);
     transition: opacity 5s ease, transform 3s ease;
 }
-
 .fade-down-animate {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Section Styling */
+/* Set the height of each section to the height of the window */
 section {
     width: 100%;
     height: 100vh;
 }
-
-/* Section 1 */
 #section1 {
-    width: 100%;
+    width: 1280px;
     height: 100vh;
+    width: 100%;
     opacity: 0.9;
     background-color: black;
     background-image: url(/LUSH/img/blob-scene-haikei.svg);
@@ -49,7 +44,7 @@ section {
     padding: 30px;
 }
 
-/* Lush Banner */
+/* lush 배너 */
 #section1 .lush_logo_icon {
     display: flex;
     object-fit: contain;
@@ -59,22 +54,20 @@ section {
     padding: 40px;
 }
 
-/* Lush Blog & YouTube Icons */
+/* 러쉬 블로그 유튜브 아이콘 */
+
 #section1 .icon_box {
     display: flex;
     justify-content: flex-end;
 }
-
 .icon_box ul {
     display: flex;
     margin: 20px;
 }
-
 .icon_box ul li:nth-of-type(2) {
     margin-right: 5px;
     margin-left: 10px;
 }
-
 #section1 .img_box {
     width: 200px;
     height: 200px;
@@ -83,62 +76,52 @@ section {
     top: 13px;
     left: 258px;
 }
-
 #section1 .img_box img {
     width: 150px;
     height: 150px;
 }
-
 .contents {
     position: absolute;
     bottom: 230px;
     right: 700px;
 }
-
 .app_icon {
     text-align: center;
     margin-top: 20px;
 }
-
 .app > img:nth-of-type(2) {
     margin-left: 20px;
 }
-
 .contents-image {
     margin-top: 100px;
     display: flex;
     align-items: center;
     text-align: center;
 }
-
 .contents-image img {
     width: 100%;
     height: 100%;
 }
-
 .lush_brand_logo {
     display: flex;
     justify-content: flex-end;
 }
-
 .lush_brand_logo img {
     width: 100px;
     height: 100px;
 }
+/* 섹션 2  */
 
-/* Section 2 */
 #section2 {
     background-image: url(/LUSH/img/brand_01.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
-
 #section2 > div {
     width: 100%;
     margin: 0 auto;
 }
-
 .article_box {
     width: 400px;
     height: 400px;
@@ -146,14 +129,12 @@ section {
     justify-content: center;
     margin: 0 auto;
 }
-
 .article_box img {
     margin: 50px;
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
-
 #section2 .section2-text p {
     width: 100%;
     margin-top: 100px;
@@ -162,30 +143,25 @@ section {
     font-size: 1.8em;
     font-weight: bold;
 }
-
 .section2-text {
     text-align: center;
 }
-
-/* Section 3 */
+/* 섹션 3 */
 #section3 {
     height: 100vh;
-    background-image: url("/LUSH/img/brand_03.jpg");
+    background-image: url("img/brand_03.jpg");
     background-size: cover;
 }
-
 #section3 > div {
     width: 1280px;
     margin: 0 auto;
 }
-
 .section3-text {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-
 .section3-text > p {
     display: flex;
     justify-content: center;
@@ -195,7 +171,6 @@ section {
     color: #fff;
 }
 
-/* Section 4 */
 #section4 {
     background-image: url(/LUSH/img/trung-do-bao-Y9SA59I-fYw-unsplash.jpg);
     background-size: cover;
@@ -205,7 +180,6 @@ section {
     align-items: center;
     position: relative;
 }
-
 #section4 p {
     display: flex;
     justify-content: center;
@@ -215,14 +189,12 @@ section {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
-
 #section4 img {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-/* Navigation Dots */
 .nav-dots {
     display: flex;
     position: fixed;
