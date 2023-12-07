@@ -120,82 +120,47 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        var page = 1;
+   var page = 1;
 var mHtml = $("html");
 var speed = 1;
 
-$(window).on("load", (e) => {
-$(document.querySelector(".contents-image")).addClass("fade-down-animate");
+window.addEventListener("load", function () {
+    $(document.querySelector(".contents-image")).addClass("fade-down-animate");
 });
 
-$(window).on("wheel", function (e) {
-e.preventDefault();
-if (mHtml.is(":animated")) return;
-if (e.originalEvent.deltaY > 0) {
-if (page == 4) return;
-page++;
-} else if (e.originalEvent.deltaY < 0) {
-if (page == 1) return;
-page--;
-}
-var posTop = (page - 1) * $(window).height();
-mHtml.animate({ scrollTop: posTop }, 1000 / speed); // adjust duration based on speed option
-updateActiveDot(page);
-});
+window.addEventListener("wheel", function (e) {
+    if (e.cancelable) {
+        e.preventDefault();
+    }
 
-function updateActiveDot(page) {
-$(".dot-btn.active").removeClass("active");
-$('.dot-btn[data-section="' + page + '"]').addClass("active");
+    if (mHtml.is(":animated")) return;
 
-// set the background-image of the button element
-}
+    if (e.deltaY > 0) {
+        if (page == 4) return;
+        page++;
+    } else if (e.deltaY < 0) {
+        if (page == 1) return;
+        page--;
+    }
 
-$(".dot-btn").click(function () {
-var section = $(this).data("section");
-var posTop = (section - 1) * $(window).height();
-mHtml.animate({ scrollTop: posTop });
-page = section;
-updateActiveDot(page);
-});
-AOS.init();
-
-        var page = 1;
-var mHtml = $("html");
-var speed = 1;
-
-$(window).on("load", (e) => {
-$(document.querySelector(".contents-image")).addClass("fade-down-animate");
-});
-
-$(window).on("wheel", function (e) {
-e.preventDefault();
-if (mHtml.is(":animated")) return;
-if (e.originalEvent.deltaY > 0) {
-if (page == 4) return;
-page++;
-} else if (e.originalEvent.deltaY < 0) {
-if (page == 1) return;
-page--;
-}
-var posTop = (page - 1) * $(window).height();
-mHtml.animate({ scrollTop: posTop }, 1000 / speed); // adjust duration based on speed option
-updateActiveDot(page);
+    var posTop = (page - 1) * $(window).height();
+    mHtml.animate({ scrollTop: posTop }, 1000 / speed);
+    updateActiveDot(page);
 });
 
 function updateActiveDot(page) {
-$(".dot-btn.active").removeClass("active");
-$('.dot-btn[data-section="' + page + '"]').addClass("active");
-
-// set the background-image of the button element
+    $(".dot-btn.active").removeClass("active");
+    $('.dot-btn[data-section="' + page + '"]').addClass("active");
 }
 
 $(".dot-btn").click(function () {
-var section = $(this).data("section");
-var posTop = (section - 1) * $(window).height();
-mHtml.animate({ scrollTop: posTop });
-page = section;
-updateActiveDot(page);
+    var section = $(this).data("section");
+    var posTop = (section - 1) * $(window).height();
+    mHtml.animate({ scrollTop: posTop });
+    page = section;
+    updateActiveDot(page);
 });
+
 AOS.init();
 
 
